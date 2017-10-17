@@ -18,3 +18,10 @@ Plug 'phpactor/phpactor' ,  {'do': 'composer install'}
 Plug 'roxma/ncm-phpactor'
 ```
 
+## Config
+
+### `g:ncm_phpactor_cwd`
+
+This plugin automatically detects your php project root by default. If it
+doesn't work for you. You should set this variable to your project root.
+

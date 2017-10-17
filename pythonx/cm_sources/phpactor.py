@@ -51,7 +51,7 @@ class Source(Base):
                                 stdin=subprocess.PIPE,
                                 stdout=subprocess.PIPE,
                                 stderr=subprocess.DEVNULL,
-                                cwd=self.nvim.eval('getcwd()'))
+                                cwd=self.nvim.eval('ncm_phpactor#get_working_dir()'))
 
         result, errs = proc.communicate(src, timeout=30)
 
